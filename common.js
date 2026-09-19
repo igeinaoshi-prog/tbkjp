@@ -7,6 +7,7 @@ import {
   doc,
   getDoc,
   setDoc,
+  deleteDoc,
   onSnapshot,
   collection,
   query,
@@ -16,7 +17,7 @@ import {
 
 const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
-export { doc, getDoc, setDoc, onSnapshot, collection, query, where, getDocs };
+export { doc, getDoc, setDoc, deleteDoc, onSnapshot, collection, query, where, getDocs };
 
 export const WEEKDAYS = ["日", "月", "火", "水", "木", "金", "土"];
 
